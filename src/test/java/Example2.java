@@ -1,26 +1,18 @@
-import org.json.simple.JSONObject;
 import org.json.simple.parser.JSONParser;
 
 import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.io.IOException;
-import java.util.Iterator;
-import java.util.List;
-import java.util.Map;
 
-public class Example1 {
+public class Example2 {
     public static void main(String[] args) {
 
         JSONParser parser = new JSONParser();
 
         try {
-            Object obj = parser.parse(new FileReader("example1.json"));
+            Object obj = parser.parse(new FileReader("example2.json"));
 
-            JSONObject jsonObject =  (JSONObject) obj;
-
-           //write code here to parse the json
-
-            //print all the platforms
+          //write code here to print all the cars for each person
 
 
         } catch (FileNotFoundException e) {
